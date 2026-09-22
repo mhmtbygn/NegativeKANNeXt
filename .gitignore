@@ -1,0 +1,23 @@
+# Original/private datasets
+data_original/
+external_data/
+
+# Generated data and results
+work/
+results/
+
+# MATLAB generated files
+*.asv
+*.autosave
+*.m~
+slprj/
+codegen/
+
+# Trained models / large binary files
+*.mat
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

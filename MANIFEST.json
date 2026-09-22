@@ -1,0 +1,106 @@
+[
+  {
+    "path": "ASSUMPTIONS_AND_SCOPE.md",
+    "bytes": 4657
+  },
+  {
+    "path": "CITATION.cff",
+    "bytes": 557
+  },
+  {
+    "path": "LICENSE_PLACEHOLDER.txt",
+    "bytes": 289
+  },
+  {
+    "path": "README.md",
+    "bytes": 4631
+  },
+  {
+    "path": "ablation/run_ablation.m",
+    "bytes": 1322
+  },
+  {
+    "path": "analysis/parameter_audit.m",
+    "bytes": 1817
+  },
+  {
+    "path": "analysis/representation_analysis.m",
+    "bytes": 1628
+  },
+  {
+    "path": "config/defaultConfig.m",
+    "bytes": 2160
+  },
+  {
+    "path": "cv/run_repeated_nested_cv.m",
+    "bytes": 2387
+  },
+  {
+    "path": "data/augment_training_set.m",
+    "bytes": 3908
+  },
+  {
+    "path": "data/prepare_dataset.m",
+    "bytes": 1828
+  },
+  {
+    "path": "dfe/apply_cwinca.m",
+    "bytes": 212
+  },
+  {
+    "path": "dfe/cwinca_select.m",
+    "bytes": 1599
+  },
+  {
+    "path": "dfe/run_dfe_pipeline.m",
+    "bytes": 1961
+  },
+  {
+    "path": "dfe/train_shallow_classifiers.m",
+    "bytes": 745
+  },
+  {
+    "path": "evaluation/calibration_analysis.m",
+    "bytes": 1323
+  },
+  {
+    "path": "evaluation/classification_metrics.m",
+    "bytes": 1180
+  },
+  {
+    "path": "evaluation/evaluate_network.m",
+    "bytes": 697
+  },
+  {
+    "path": "external/run_external_validation.m",
+    "bytes": 733
+  },
+  {
+    "path": "model/buildNegativeKANNeXt.m",
+    "bytes": 9091
+  },
+  {
+    "path": "run_all.m",
+    "bytes": 1233
+  },
+  {
+    "path": "tests/smoke_test.m",
+    "bytes": 451
+  },
+  {
+    "path": "training/train_holdout.m",
+    "bytes": 1112
+  },
+  {
+    "path": "utils/export_environment.m",
+    "bytes": 390
+  },
+  {
+    "path": "utils/wilson_ci.m",
+    "bytes": 323
+  },
+  {
+    "path": "xai/run_xai.m",
+    "bytes": 2581
+  }
+]
