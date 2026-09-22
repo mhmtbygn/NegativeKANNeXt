@@ -1,5 +1,7 @@
 # NegativeKANNeXt
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22900516.svg)](https://doi.org/10.5281/zenodo.22900516)
+
 [![MATLAB](https://img.shields.io/badge/MATLAB-R2023b-orange.svg)](https://www.mathworks.com/products/matlab.html)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Research code](https://img.shields.io/badge/status-research%20code-lightgrey.svg)](#scope-and-clinical-use)
@@ -276,7 +278,7 @@ Until a final article DOI and archived software DOI are available, cite the repo
 
 > Demir S, Can B, Goktas OF, Baygin M, Dogan S, Tuncer T. **NegativeKANNeXt reproducibility code**. Version 1.0.0, 2026. https://github.com/mhmtbygn/NegativeKANNeXt
 
-When the manuscript and Zenodo archive receive permanent DOIs, those identifiers can be added to `CITATION.cff` without changing the source-code version.
+The archived v1.0.0 software release is permanently available at Zenodo: https://doi.org/10.5281/zenodo.22900516.
 
 ## License
 

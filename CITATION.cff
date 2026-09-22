@@ -6,6 +6,7 @@ version: "1.0.0"
 date-released: "2026-09-22"
 license: MIT
 repository-code: "https://github.com/mhmtbygn/NegativeKANNeXt"
+doi: "10.5281/zenodo.22900516"
 url: "https://github.com/mhmtbygn/NegativeKANNeXt"
 authors:
   - family-names: "Demir"
