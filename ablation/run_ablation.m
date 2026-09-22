@@ -2,8 +2,8 @@ function tbl = run_ablation(trainImds,valImds,testImds,cfg)
 %RUN_ABLATION Re-train selected manuscript ablation variants.
 %
 % Implemented directly:
-% Full, A1(additive fusion), A2(no negative shortcut),
-% A3(GELU only), A4(Swish only), A5(end-to-end).
+% Full, A1(all subtraction operators replaced by addition),
+% A2(no negative shortcut), A3(GELU only), A4(Swish only), A5(end-to-end).
 %
 % A6 is obtained by running DFE on Full.
 % A7 (true concat + 1x1 restoration) and A8 may require explicit graph

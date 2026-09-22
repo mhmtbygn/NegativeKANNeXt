@@ -1,8 +1,12 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the associated article."
+message: "If you use this software, please cite this repository and the associated article."
+type: software
 title: "NegativeKANNeXt reproducibility code"
 version: "1.0.0"
 date-released: "2026-09-22"
+license: MIT
+repository-code: "https://github.com/mhmtbygn/NegativeKANNeXt"
+url: "https://github.com/mhmtbygn/NegativeKANNeXt"
 authors:
   - family-names: "Demir"
     given-names: "Sukru"
@@ -16,5 +20,12 @@ authors:
     given-names: "Sengul"
   - family-names: "Tuncer"
     given-names: "Turker"
-repository-code: "TO_BE_ADDED"
-doi: "TO_BE_ADDED"
+keywords:
+  - "NegativeKANNeXt"
+  - "ACL rupture"
+  - "knee MRI"
+  - "deep learning"
+  - "medical image classification"
+  - "deep feature engineering"
+  - "CWINCA"
+  - "MATLAB"

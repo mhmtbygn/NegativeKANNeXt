@@ -79,8 +79,8 @@ if cfg.Model.ActivationMode == "dual"
     a6b=functionLayer(@geluFn,"Name",prefix+"_gelu5","Formattable",true);
     a7a=functionLayer(@swishFn,"Name",prefix+"_swish4","Formattable",true);
     a7b=functionLayer(@swishFn,"Name",prefix+"_swish5","Formattable",true);
-    d6=binaryFusionLayer(prefix+"_ten6","subtract");
-    d7=binaryFusionLayer(prefix+"_ten7","subtract");
+    d6=binaryFusionLayer(prefix+"_ten6",cfg.Model.Fusion);
+    d7=binaryFusionLayer(prefix+"_ten7",cfg.Model.Fusion);
     cat=depthConcatenationLayer(2,"Name",prefix+"_cat");
     g=addLayers(g,a6a);g=addLayers(g,a6b);g=addLayers(g,a7a);g=addLayers(g,a7b);
     g=addLayers(g,d6);g=addLayers(g,d7);g=addLayers(g,cat);
@@ -99,7 +99,7 @@ if cfg.Model.ActivationMode == "dual"
 elseif cfg.Model.ActivationMode == "gelu"
     a1=functionLayer(@geluFn,"Name",prefix+"_gelu4","Formattable",true);
     a2=functionLayer(@geluFn,"Name",prefix+"_gelu5","Formattable",true);
-    d=binaryFusionLayer(prefix+"_ten6","subtract");
+    d=binaryFusionLayer(prefix+"_ten6",cfg.Model.Fusion);
     g=addLayers(g,a1);g=addLayers(g,a2);g=addLayers(g,d);
     g=connectLayers(g,prefix+"_ten4",prefix+"_gelu4");
     g=connectLayers(g,prefix+"_ten5",prefix+"_gelu5");
@@ -109,7 +109,7 @@ elseif cfg.Model.ActivationMode == "gelu"
 elseif cfg.Model.ActivationMode == "swish"
     a1=functionLayer(@swishFn,"Name",prefix+"_swish4","Formattable",true);
     a2=functionLayer(@swishFn,"Name",prefix+"_swish5","Formattable",true);
-    d=binaryFusionLayer(prefix+"_ten7","subtract");
+    d=binaryFusionLayer(prefix+"_ten7",cfg.Model.Fusion);
     g=addLayers(g,a1);g=addLayers(g,a2);g=addLayers(g,d);
     g=connectLayers(g,prefix+"_ten4",prefix+"_swish4");
     g=connectLayers(g,prefix+"_ten5",prefix+"_swish5");
@@ -151,7 +151,7 @@ g=connectLayers(g,prefix+"_proj10",prefix+"_add11/in2");
 g=connectLayers(g,prefix+"_add11",prefix+"_bn11");
 
 if cfg.Model.UseNegativeShortcut
-    outLayer=binaryFusionLayer(prefix+"_out","subtract");
+    outLayer=binaryFusionLayer(prefix+"_out",cfg.Model.Fusion);
     g=addLayers(g,outLayer);
     g=connectLayers(g,in,prefix+"_out/in1");
     g=connectLayers(g,prefix+"_bn11",prefix+"_out/in2");

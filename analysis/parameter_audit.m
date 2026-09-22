@@ -44,9 +44,9 @@ pHead=convp(1,W(end),cfg.Model.NumClasses); % equivalent FC parameter count
 total=total+pHead; parts(end+1,:)={"Classifier",pHead}; %#ok<AGROW>
 
 T=cell2table(parts,"VariableNames",["Component","TrainableParameters"]);
-T=[T; {"TOTAL",total}];
+T=[T; cell2table({"TOTAL",total},"VariableNames",T.Properties.VariableNames)];
 
-fprintf("Analytic trainable parameter count: %,d (%.4f M)\n",total,total/1e6);
+fprintf("Analytic trainable parameter count: %d (%.4f M)\n",total,total/1e6);
 end
 
 function p=convp(k,cin,cout)

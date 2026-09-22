@@ -28,7 +28,7 @@ for b=1:nb
     end
 end
 
-ece=nansum((count/sum(count)).*gap);
+ece=sum((count/sum(count)).*gap,"omitnan");
 mce=max(gap,[],"omitnan");
 brier=mean((conf-correct).^2);
 

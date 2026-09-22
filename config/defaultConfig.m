@@ -53,6 +53,8 @@ cfg.CV.NumRepeats = 5;
 cfg.Calibration.Edges = [0.5 0.6 0.7 0.8 0.9 1.0];
 
 % XAI.
+cfg.XAI.OcclusionMaskRepresentative = [24 24];
+cfg.XAI.OcclusionStrideRepresentative = [12 12];
 cfg.XAI.OcclusionMaskDetailed = [16 16];
 cfg.XAI.OcclusionStrideDetailed = [8 8];
 cfg.XAI.OcclusionMaskComparison = [24 24];

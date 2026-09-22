@@ -38,14 +38,8 @@ predictions=struct();
 for i=1:numel(names)
     name=names{i};
     mdl=models.(name);
-
-    if name=="SVM"
-        [pred,score]=predict(mdl,XteS);
-        cls=string(mdl.ClassNames);
-    else
-        [pred,score]=predict(mdl,XteS);
-        cls=string(mdl.ClassNames);
-    end
+    [pred,score]=predict(mdl,XteS);
+    cls=string(mdl.ClassNames);
 
     met=classification_metrics(testImds.Labels,pred,score,cls,cfg.PositiveClass);
     s=met.scalar;
