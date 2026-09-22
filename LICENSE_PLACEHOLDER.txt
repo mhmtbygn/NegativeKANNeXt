@@ -1,5 +1,0 @@
-No software license has been selected in this draft package.
-
-Before public release, choose a license that reflects the authors' intended reuse conditions
-(e.g., MIT, BSD-3-Clause, GPL-3.0, or another institutionally approved license) and replace
-this file with the official license text.
